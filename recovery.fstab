@@ -1,8 +1,8 @@
-/             ext4     /dev/block/platform/soc/7824900.sdhci/by-name/system       flags=display=
-/cache        ext4     /dev/block/platform/soc/7824900.sdhci/by-name/cache        flags=display=cache
-/data         f2fs     /dev/block/platform/soc/7824900.sdhci/by-name/userdata     flags=display=data
-/external_sd  vfat     /dev/block/mmcblk1p1                                       flags=removable;storage;display=sdcard
-/boot         emmc     /dev/block/platform/soc/7824900.sdhci/by-name/boot         flags=display=boot
-/recovery     emmc     /dev/block/platform/soc/7824900.sdhci/by-name/recovery     flags=backup=1;display=recovery
-/misc         emmc     /dev/block/platform/soc/7824900.sdhci/by-name/misc         flags=display=misc
-/vendor       ext4     /dev/block/platform/soc/7824900.sdhci/by-name/vendor       flags=backup=1;display=vendor
+# mount point  fstype   device                                        device2      flags
+/              ext4     /dev/block/platform/soc/7824900.sdhci/by-name/system       flags=display=
+/cache         ext4     /dev/block/platform/soc/7824900.sdhci/by-name/cache        flags=display=cache
+/data          f2fs     /dev/block/platform/soc/7824900.sdhci/by-name/userdata     flags=display=data
+/boot          emmc     /dev/block/platform/soc/7824900.sdhci/by-name/boot         flags=display=boot
+/recovery      emmc     /dev/block/platform/soc/7824900.sdhci/by-name/recovery     flags=backup=1;display=recovery
+/misc          emmc     /dev/block/platform/soc/7824900.sdhci/by-name/misc         flags=display=misc
+/vendor        ext4     /dev/block/platform/soc/7824900.sdhci/by-name/vendor       flags=backup=1;display=vendor
