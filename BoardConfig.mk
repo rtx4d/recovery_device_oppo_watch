@@ -64,3 +64,4 @@ TW_ROUND_SCREEN := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 61
+TW_EXCLUDE_DEFAULT_USB_INIT := true
