@@ -6,3 +6,7 @@
 /recovery      emmc     /dev/block/platform/soc/7824900.sdhci/by-name/recovery     flags=backup=1;display=recovery
 /misc          emmc     /dev/block/platform/soc/7824900.sdhci/by-name/misc         flags=display=misc
 /vendor        ext4     /dev/block/platform/soc/7824900.sdhci/by-name/vendor       flags=backup=1;display=vendor
+
+# raw partition images
+/system_image  emmc     /dev/block/platform/soc/7824900.sdhci/by-name/system       flags=display="System Image"
+/vendor_image  emmc     /dev/block/platform/soc/7824900.sdhci/by-name/vendor       flags=display="Vendor Image"
