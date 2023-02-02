@@ -8,7 +8,6 @@
 DEVICE_PATH := device/oppo/beluga
 
 # For building with minimal manifest
-LC_ALL=C
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
@@ -30,34 +29,6 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
-
-# Decryption
-TW_INCLUDE_CRYPTO := true
-#TW_INCLUDE_FBE := true
-TW_INCLUDE_CRYPTO_FBE := true
-BOARD_USES_QCOM_FBE_DECRYPTION := true
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
-
-TARGET_BOOTLOADER_BOARD_NAME := MSM8909
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno304
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-BOARD_USES_QCOM_HARDWARE := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
-BOARD_USES_METADATA_PARTITION := true
-
-TARGET_RECOVERY_QCOM_RTC_FIX := true
-TWRP_INCLUDE_LOGCAT := true
-TW_HAS_EDL_MODE := true
-TW_EXCLUDE_TWRPAPP := true
-TW_NO_USB_STORAGE := true
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
-TW_DEVICE_VERSION=$(shell date '+%Y%m%d')
-TARGET_USES_64_BIT_BINDER := true
-
-
-
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=beluga msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78af000 ramoops.mem_address=0x93100000 ramoops.mem_size=0x100000 ramoops.record_size=0x20000 ramoops.dump_oops=0 buildvariant=user veritykeyid=id:27b8894f5753a3e5a6cbd26fa7ab31542db52f2d
