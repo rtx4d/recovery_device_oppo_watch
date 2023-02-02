@@ -6,3 +6,8 @@
 #
 
 LOCAL_PATH := device/oppo/beluga
+
+# FBE
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
