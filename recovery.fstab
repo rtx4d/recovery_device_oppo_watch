@@ -1,7 +1,7 @@
 # mount point  fstype   device                                        device2      flags
 /              ext4     /dev/block/platform/soc/7824900.sdhci/by-name/system       flags=display=
 /cache         ext4     /dev/block/platform/soc/7824900.sdhci/by-name/cache        flags=display=cache
-/data          f2fs     /dev/block/platform/soc/7824900.sdhci/by-name/userdata     flags=display=data
+/data          f2fs     /dev/block/platform/soc/7824900.sdhci/by-name/userdata     flags=display=data;encryptable=footer
 /boot          emmc     /dev/block/platform/soc/7824900.sdhci/by-name/boot         flags=display=boot
 /recovery      emmc     /dev/block/platform/soc/7824900.sdhci/by-name/recovery     flags=backup=1;display=recovery
 /misc          emmc     /dev/block/platform/soc/7824900.sdhci/by-name/misc         flags=display=misc
