@@ -23,3 +23,9 @@ PRODUCT_NAME := omni_beluga
 PRODUCT_BRAND := oppo
 PRODUCT_MODEL := beluga
 PRODUCT_MANUFACTURER := oppo
+
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
+    ro.product.device \
+    ro.product.model \
+    ro.product.name \
+    ro.build.product \

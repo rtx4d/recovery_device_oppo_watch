@@ -18,7 +18,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a7
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := beluga
+TARGET_OTA_ASSERT_DEVICE := beluga,belugaxl,orca
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -29,6 +29,10 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
+
+#Init
+TARGET_INIT_VENDOR_LIB := libinit_oppowatch
+TARGET_RECOVERY_DEVICE_MODULES := libinit_oppowatch
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=beluga msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78af000 ramoops.mem_address=0x93100000 ramoops.mem_size=0x100000 ramoops.record_size=0x20000 ramoops.dump_oops=0 buildvariant=user veritykeyid=id:27b8894f5753a3e5a6cbd26fa7ab31542db52f2d
